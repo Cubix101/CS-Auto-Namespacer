@@ -1,4 +1,4 @@
-# CS Auto Namespacer
+# C# Auto Namespacer
 A python script for adding namespaces to multiple .cs files without them all at once.
 
 The script will recursively crawl a given input folder for all .cs files, and detect those without namespaces. It will then generate a namespace using the folder structure, relative to the input folder, plus a given root namespace (if supplied). A new file is then generated with the namespace added after the first line that is not a using statement, along with a final closing curly brace at the end of the file. This file is generated in the given output folder, with respect to relative directory structure.
